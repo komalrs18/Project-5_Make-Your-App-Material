@@ -79,7 +79,6 @@ public class UpdaterService extends IntentService {
 
         } catch (JSONException | RemoteException | OperationApplicationException e) {
             Log.e(TAG, "Error updating content.", e);
-            e.printStackTrace();
         }
 
         sendStickyBroadcast(

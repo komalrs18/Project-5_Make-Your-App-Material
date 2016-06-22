@@ -16,7 +16,6 @@
 
 package com.example.xyzreader.ui;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -29,7 +28,7 @@ import android.widget.FrameLayout;
 
 import com.example.xyzreader.R;
 
-@Deprecated
+
 public class DrawInsetsFrameLayout extends FrameLayout {
     private Drawable mInsetBackground;
     private Drawable mTopInsetBackground;
@@ -101,7 +100,6 @@ public class DrawInsetsFrameLayout extends FrameLayout {
         mOnInsetsCallback = onInsetsCallback;
     }
 
-    @SuppressLint("NewApi")
     @Override
     public WindowInsets onApplyWindowInsets(WindowInsets insets) {
         insets = super.onApplyWindowInsets(insets);
